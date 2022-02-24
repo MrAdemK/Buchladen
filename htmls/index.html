@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchladen</title>
+
+    <link rel="stylesheet" type="text/css" href="../vendor/skeleton/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/skeleton/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-brand-wrapper">
+                <a class="header-brand" href="index.html">BUCHLADEN</a>
+            </div>
+            <nav class="header-navbar">
+                <ul class="header-navbar-links">
+                    <li><a href="./books.html">Books</a></li>
+                    <li>Contact</li>
+                    <li><a href="./merkzettel.html">Merkzettel</a></li>
+                    <li><a href="./warenkorb.html">Warenkorb</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="slogan">
+                Lerne neue WELTEN!!!
+            </div>
+        </div>
+        <div class="container">
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="../img/bild1.jpg" style="width:50%">
+                <img class="mySlides" src="../img/bild2.jpg" style="width:50%">
+                <img class="mySlides" src="../img/bild3.jpg" style="width:50%">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
+        <div class="container">
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlidesmini1" src="../img/bild1.jpg" style="width:30%">
+                <img class="mySlidesmini1" src="../img/bild2.jpg" style="width:30%">
+                <img class="mySlidesmini1" src="../img/bild3.jpg" style="width:30%">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlidesmini1");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
+    </header>
+</body>
+
+</html>
